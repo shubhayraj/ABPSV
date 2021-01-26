@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/MyFile.css' %}">
+
+</head>
+<body >
+<h1 align="center">VOTING DASHBOARD</h1>
+<table align="center" >
+    <tr><td style="margin-right: 30px;padding-right: 20px;">
+        {% if b.GCand < 1 %}
+        <a href="{% url 'girl' %}">{% endif %}<img src="{% static 'image/hgirl.png' %}" style="margin-right: 20px"><br><h1 align="center">HEAD GIRL</h1></a>
+        </td><td style="margin-left: 30px;padding-left: 20px;">
+        {% if b.BCand < 1 %}
+        <a href="{% url 'boy' %}">{% endif %}<img src="{% static 'image/hboy.png' %}" style="margin-left: 30px"><br><h1 align="center">HEAD BOY</h1></a>
+   </td> </tr>
+    </table>
+</body>
+</html>

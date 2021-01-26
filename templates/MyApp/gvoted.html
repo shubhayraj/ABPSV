@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body >
+<h1 align="center">VOTING DASHBOARD</h1>
+<table align="center">
+    <tr><td>
+<img src="{% static 'image/hgirl.png' %}"><br><h1>HEAD GIRL</h1>
+        </td><td>
+<a href="{% url 'boy' %}"><img src="{% static 'image/hboy.png' %}"><br><h1>HEAD BOY</h1></a>
+   </td> </tr>
+    </table>
+</body>
+</html>

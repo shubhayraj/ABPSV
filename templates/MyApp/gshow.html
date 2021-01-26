@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>RETRIEVE</title>
+    <link rel="stylesheet" href="{% static 'css/MyFile.css' %}">
+</head>
+<body>
+<a href="{% url 'girl' %}">List of girl CANDIDATES</a>
+{{ x.Gname }} Details<br/>
+ ID={{ x.id }}<br/>
+house={{ x.Ghouse }}<br/>
+photo= <img src="{{ x.Gpic.url }}" class="logo"><br/>
+
+</body>
+</html>

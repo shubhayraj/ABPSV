@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RESULT</title>
+    <link rel="stylesheet" href="{% static 'css/MyFile.css' %}">
+</head>
+<body>
+<h1 align="center">RESULTS</h1>
+<table align="center" style="padding-left: 10px;text-align: center;">
+    <tr>
+        <td>HEAD GIRL</td><td>HEAD BOY</td>
+    </tr>
+
+    <tr>
+        <td><img src="{{ x.Gpic.url }}" class="logo"></td><td><img src="{{ y.Bpic.url }}" class="logo"></td>
+    </tr>
+    <tr>
+        <td>ID:{{ x.id }}</td><td>ID:{{ y.id }}</td>
+    </tr>
+    <tr>
+        <td>Name:{{ x.Gname }}</td><td>Name:{{ y.Bname }}</td>
+    </tr>
+    <tr>
+        <td>House:{{ x.Ghouse }}</td><td>House:{{ y.Bhouse }}</td>
+    </tr>
+    <tr>
+        <td>Class:{{ x.Gclass }}</td><td>Class:{{ y.Bclass }}</td>
+    </tr>
+    <tr>
+        <td>Vote:{{ x.Gcount }}</td><td>Vote:{{ y.Bcount }}</td>
+    </tr>
+</table>
+
+</body>
+</html>

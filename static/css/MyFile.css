@@ -1,0 +1,46 @@
+.logo{
+    height: 120px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.cont{
+    height: 100px;
+    width: 200px;
+    float: right;
+    margin-top: 40px;
+}
+.beg{
+    height: 100px;
+    width: 250px;
+    margin-top: 40px;
+    float: left;
+}
+.whole{
+    height: 150px;
+
+}
+
+.icon{
+            height: 10%;
+            width: 10%;
+        }
+.asd{
+            font-size: 50pt;
+            height: 10%;
+            width: 90%;
+            float: right;
+            background-color: blue;
+            color: white;
+        }
+.cor {
+    height: 290px;
+    width: 600px;
+    background-color: bisque;
+    float: left;
+
+}
+
+td{
+    margin-left: 10pt;
+}

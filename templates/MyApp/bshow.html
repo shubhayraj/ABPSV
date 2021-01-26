@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="/bcreate/">AddNewImage</a><br/>
+{% for obj in clist %}
+<a href="{{ obj.get_url }}"><div class="beg">{{ obj.id }}.{{ obj.company_na }}</div>
+    {% if obj.company_pic %}<img src="{{ obj.company_pic.url }}" class="logo"><br/>
+{% endif %}
+<div class="cont">
+<a href="{% url 'bupdate' id=obj.id %}" >UPDATE</a>
+<a href="{% url 'bdelete' id=obj.id %}">DELETE</a>
+</div>
+</a>
+{% endfor %}
+</body>
+</html>
